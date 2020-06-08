@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <title>表单</title>
+</head>
+<body>
+    <!--基本实例-->
+    <form action="">
+        <div class="form-group">
+            <label for="name"></label>
+            姓名：<input type="name" class="form-control" id="name" placeholder="请输入姓名">
+        </div>
+        <div class="form-group">
+            <label for="password"></label>
+            密码：<input type="password" class="form-control" id="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <label for="file">文件上传</label>
+            <input type="file" id="file">
+            <p class="help-block">请选择文件</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"/>学习
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"/>恋爱
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"/>游戏
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+    </form>
+
+    <!--内联表单-->
+  <!--  <form class="form-inline">
+        <div class="form-group">
+            <label for="text"></label>
+            <input type="text" class="form-control" id="text" placeholder="输入文字">
+        </div>
+        <div class="form-group">
+            <label for="email"></label>
+            <input type="email" class="form-control" id="email" placeholder="请输入正确的邮箱">
+        </div>
+        <button type="submit" class="btn btn-default">submit</button>
+    </form>-->
+
+    <form class="form-inline">  <!--一行展示-->
+        <div class="form-group">
+            <label class="sr-only" for="q">money</label>
+            <div class="input-group">
+                <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="q">
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">确定</button>
+    </form>
+
+    <!--水平排列的表单-->
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label for="abc" class="col-sm-4 control-label">用户名：</label>
+            <div class="col-sm-4">
+                <input type="text" id="abc" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pwd" class="col-sm-4 control-label">密码：</label>
+            <div class="col-sm-4">
+                <input type="password" id="pwd" class="form-control">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

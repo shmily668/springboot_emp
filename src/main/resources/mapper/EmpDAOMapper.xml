@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.EmpDao">
+    <!--设置缓存-->
+    <cache type="com.baizhi.cache.RedisCache"/>
+    <!--查询所有员工-->
+    <select id="queryAll" resultType="Emp">
+        select id,name,password,birthday,mobile,state from emp
+    </select>
+    <!--添加员工-->
+    <insert id="addEmp">
+        insert into emp values(#{id},#{name},#{password},#{birthday},#{mobile},#{state})
+    </insert>
+    <!--修改员工-->
+    <update id="updateEmp">
+        <set>
+            <if test="name!=null">
+                name=#{name},
+            </if>
+            <if test="password!=null">
+                password=#{password},
+            </if>
+            <if test="birthday!=null">
+                birthday=#{birthday},
+            </if>
+            <if test="mobile!=null">
+                mobile=#{mobile},
+            </if>
+            <if test="state!=null">
+                state=#{state}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <!--删除员工-->
+    <delete id="deleteEmp">
+        delete from emp where id = #{id}
+    </delete>
+</mapper>

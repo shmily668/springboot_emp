@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../boot/js/jquery-3.3.1.min.js"></script>
+    <script src="../boot/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <title>后台管理系统</title>
+    <style>
+        .p {
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <p class="navbar-text">后台管理系统</p>
+        <div class="navbar-default">
+            <a href="" class="navbar-brand glyphicon glyphicon-plus col-sm-offset-10">
+                <span class="caret"></span>
+            </a>
+        </div>
+    </nav>
+    <div class="input-group">
+        <div class="col-sm-offset-3">
+            <input type="text">
+        </div>
+        <div class="col-sm-offset-3">
+            <input type="text" placeholder="用户管理">
+        </div>
+        <div class="col-sm-offset-3">
+            <input type="text" placeholder="商品管理">
+        </div>
+        <div class="col-sm-offset-3">
+            <input type="text" placeholder="订单管理">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-7 col-sm-offset-3">
+            <p class="p">客户信息</p>
+            <hr>
+            <table class="table table-bordered">
+                <div class="input-group input-group-lg">
+                <tr>
+                    <strong style="font-size: 18px">客户姓名</strong><input type="text" placeholder="输入客户姓名" class="input-group-lg">
+                    <strong style="font-size: 18px">客户来源</strong><input type="text" placeholder="---请选择---">
+                    <strong style="font-size: 18px">所属行业</strong><input type="text" placeholder="---请选择---">
+                    <strong style="font-size: 18px">客户级别</strong><input type="text" placeholder="---请选择---">
+                    <button type="button" class="btn btn-primary">查询</button>
+                </tr>
+                </div>
+            </table>
+            <table class="table table-bordered">
+                <tr>客户信息列表</tr>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>来源</th>
+                        <th>行业</th>
+                        <th>级别</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>IT</td>
+                    <td>智联</td>
+                    <td>初级开发工程师</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>李四</td>
+                    <td>IT</td>
+                    <td>智联</td>
+                    <td>中级开发工程师</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>王五</td>
+                    <td>IT</td>
+                    <td>智联</td>
+                    <td>高级开发工程师</td>
+                </tr>
+            </table>
+            <nav class="nav navbar-right">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">
+                            <span>&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#">
+                            <span>&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
