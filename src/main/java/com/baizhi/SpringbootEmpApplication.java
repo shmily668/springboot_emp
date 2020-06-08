@@ -10,6 +10,7 @@ public class SpringbootEmpApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootEmpApplication.class, args);
+        System.out.print("I am super boy!");
     }
 
 }
